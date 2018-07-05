@@ -5,10 +5,12 @@
     <clobbers target="modusechoswift" />
   </js-module>
   <platform name="ios">
+    <dependency id="cordova-plugin-add-swift-support" version="1.7.2"/>
     <config-file target="config.xml" parent="/*">
       <feature name="ModusEchoSwift">
         <param name="ios-package" value="ModusEchoSwift" />
       </feature>
+      <preference name="UseSwiftLanguageVersion" value="3" />
     </config-file>
     <source-file src="src/ios/ModusEchoSwift.swift" />
   </platform>
